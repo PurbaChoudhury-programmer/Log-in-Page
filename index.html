@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-in Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="hero">
+       <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div>
+        <div class="social-icons">
+            <img src="images\facebook-icon 2.svg">
+            <img src="images\google-icon.svg">
+            <img src="images\twitter-icon.svg">
+        </div>
+
+        <!--Login form-->
+
+        <form class="input-group" id="login">
+            <input type="text" class="input-field" placeholder="User-Id" required>
+            <input type="text" class="input-field" placeholder="Password" required>
+            <input type="checkbox" class="checkbox"><span>Remember Password</span>
+             <button type="submit" class="submit-btn">Log in</button>
+        </form >
+
+        <!--Registration form-->
+        <form class="input-group" id="register">
+            <input type="text" class="input-field" placeholder="User-Name" required>
+            <input type="email" class="input-field" placeholder="Email-Id" required>
+            <input type="text" class="input-field" placeholder="Password" required>
+            <input type="checkbox" class="checkbox"><span>I Agreed to the Terms & Conditions</span>
+            <button type="submit" class="submit-btn">Register</button>
+        </form >
+        </div>
+    </div>
+
+
+<script src="script.js"></script>
+    
+</body>
+</html>
